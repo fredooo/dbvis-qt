@@ -1,6 +1,6 @@
 node_modules
 dist
 coverage
-dbvis-hc-*.tgz
+dbvis-qt-*.tgz
 
 .vscode

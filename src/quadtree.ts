@@ -17,10 +17,6 @@ export class Quadtree<T> extends Rectangle {
 
     private constructor(x: number, y: number, width: number, height: number) {
         super(x, y, width, height);
-        this.nwChild = undefined;
-        this.neChild = undefined;
-        this.seChild = undefined;
-        this.swChild = undefined;
         this.children = [];
         this.items = [];
         this.hasChildren = false;

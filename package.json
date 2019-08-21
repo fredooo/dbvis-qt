@@ -1,7 +1,7 @@
 {
   "name": "dbvis-qt",
-  "version": "0.0.1",
-  "description": "A TypeScript implementation of a quadtree",
+  "version": "1.0.0",
+  "description": "A TypeScript implementation of the quadtree data structure",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
