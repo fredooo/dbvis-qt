@@ -1,0 +1,42 @@
+{
+  "name": "dbvis-qt",
+  "version": "0.0.1",
+  "description": "A TypeScript implementation of a quadtree",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint src test --ext .ts",
+    "lint:fix": "eslint src test --ext .ts --fix",
+    "test": "jest",
+    "build": "tsc",
+    "prepare": "npm run lint && npm run test && npm run build",
+    "clean": "rm -r dist; rm -r coverage; rm dbvis-qt-*.tgz; echo 'done'"
+  },
+  "files": [
+    "dist/**"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredooo/dbvis-qt.git"
+  },
+  "keywords": [
+    "quadtree",
+    "hierarchical",
+    "data",
+    "structure"
+  ],
+  "author": "Frederik Dennig",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "eslint": "^6.2.1",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.3"
+  }
+}
