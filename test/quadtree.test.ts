@@ -43,11 +43,11 @@ test('remove object', () => {
 
 test('clean', () => {
     const qt = Quadtree.createQuadtree<number>(100, 100);
-    qt.insert(new Rectangle(0, 10, 5, 5), 6);
-    qt.insert(new Rectangle(1, 20, 10, 10), 6);
-    qt.insert(new Rectangle(40, 30, 5, 15), 6);
+    qt.insert(new Rectangle(0, 10, 10, 10), 6);
+    qt.insert(new Rectangle(30, 35, 10, 10), 6);
+    qt.insert(new Rectangle(50, 55, 15, 15), 6);
     qt.clear();
-    expect(qt.retrieve(new Rectangle(0, 10, 5, 5))).toBeUndefined();
-    expect(qt.retrieve(new Rectangle(1, 20, 10, 10))).toBeUndefined();
-    expect(qt.retrieve(new Rectangle(40, 30, 5, 15))).toBeUndefined();
+    expect(qt.retrieve(new Point(1, 11))).toBeUndefined();
+    expect(qt.retrieve(new Point(21, 26))).toBeUndefined();
+    expect(qt.retrieve(new Point(51, 51))).toBeUndefined();
 });
