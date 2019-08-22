@@ -32,10 +32,6 @@ export class Quadtree<T> extends Rectangle {
         this.hasChildren = false;
     }
 
-    public hasObjects(): boolean {
-        return this.items.length > 0;
-    }
-
     public insert(rectangle: Rectangle, object: T): void {
         if (!this.hasChildren) {
             this.appendChildren();
