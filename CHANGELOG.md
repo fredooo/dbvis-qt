@@ -10,6 +10,11 @@ All notable changes to this project will be documented in this file.
 - Fixed
 - Security
 
+## [v1.0.1] (2019-08-23)
+### Added
+- `index.js` exposing the API
+- Finalized all tests
+
 ## [v0.0.1] (2019-08-21)
 ### Added
 - Implementation of the quadtree data structure
